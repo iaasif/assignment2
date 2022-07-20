@@ -1,0 +1,381 @@
+/* top banner side */
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.top-banner {
+    background-color: #161616;
+    color: #FFFFFF;
+    border-radius: 40px;
+
+    width: 1380px;
+
+    margin-left: 80px;
+    margin-top: 50px;
+    margin-bottom: 130px;
+
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.left {
+
+    padding-left: 106px;
+    padding-right: 24px;
+    padding-top: 111px;
+    padding-bottom: 111px;
+
+}
+
+.left h1 {
+    font-size: 50px;
+}
+
+.left p {
+    font-size: 16px;
+}
+
+
+/* .right , .left{
+    width: 50%;
+} */
+
+
+
+.btn-watch-live {
+    background: #DD0000;
+    width: 180px;
+    height: 56px;
+    font-size: 25px;
+    border-radius: 8px;
+}
+
+.btn-watch-live:hover {
+    background-color: bisque;
+}
+
+.right {
+    padding-top: 33px;
+    padding-right: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* second section */
+
+.second-seciton {
+
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 24px;
+}
+
+
+
+
+
+/* board side */
+
+.board {
+    background-color: #161616;
+    width: 312px;
+    height: 312px;
+    border-radius: 10px;
+    padding: 30px;
+    margin-left: 80px;
+}
+
+.btn {
+    display: grid;
+    width: 252px;
+    height: 64px;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 30px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    text-align: center;
+    background: #FFFFFF;
+
+}
+
+#btn-blog {
+
+    background: #DD0000;
+    color: white;
+}
+
+/* end bord side */
+
+
+
+
+/* GERMANY VS FRANCE START  */
+
+
+
+.container-gvf {
+    border: 2px solid rgba(128, 128, 128, 0.226);
+    margin: 10px 5px;
+    padding: 60px 10px;
+    border-radius: 20px;
+
+
+
+}
+
+.country {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+
+}
+
+#vs {
+    margin: 15px 25px;
+    /* border: 2px solid gold; */
+}
+
+.text-gvf {
+    display: grid;
+    justify-content: center;
+    font-weight: 900;
+}
+
+.gvf {
+    /* border: 2px solid aqua; */
+    margin: 20px 10px;
+    font-size: 20px;
+}
+
+.date {
+
+    margin: 10px 18px;
+    /* border: 2px solid rebeccapurple; */
+    color: gray;
+}
+
+.big-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    width: 70%;
+    /* padding-right: 100px; */
+}
+
+/* GERMANY VS FRANCE END  */
+
+#footer {
+
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-bottom: 2%;
+    padding-top: 2%
+}
+
+.footer-c {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+/* doing responsiveness */
+
+
+/* mobile device */
+@media only screen and (max-width:688px) {
+
+
+    .top-banner {
+        width: 100%;
+        height: 80%;
+        background-color: violet;
+        margin: 0;
+
+    }
+
+
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .left {
+        text-align: center;
+        position: relative;
+        margin-right: 80px;
+        /* margin: auto; */
+
+    }
+
+    .right {
+        margin-left: 100px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+
+    .board {
+        position: relative;
+        background-color: white;
+        justify-content: center;
+        /* margin-left: 100px; */
+        margin: auto;
+    }
+
+
+    /* germany vs france */
+
+    .second-seciton {
+        grid-template-columns: repeat(1, 1fr);
+
+
+        flex-direction: column-reverse;
+        /* justify-content: center; */
+
+
+        width: auto;
+        /* margin-left: 0%; */
+        padding: auto;
+    }
+
+    .big-container {
+        margin: auto;
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+    }
+
+
+
+    .footer-c {
+        display: grid;
+        grid-template-columns: (1, 1fr);
+
+    }
+
+
+}
+
+/* end of mobile device */
+
+
+
+
+
+
+
+
+
+
+/* start for tablet */
+
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+
+    .top-banner {
+        width: 100%;
+        height: 80%;
+        background-color: violet;
+        margin: 0;
+
+    }
+
+
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .left {
+        text-align: center;
+        position: relative;
+        margin-right: 80px;
+        /* margin: auto; */
+
+    }
+
+    .right {
+        margin-left: 100px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+
+    .board {
+        background-color: white;
+        justify-content: center;
+        margin-left: 25vw;
+        margin-bottom: 2vw;
+
+    }
+
+    .btn {
+        margin: 10px 50px;
+        padding: 10px 30px;
+        text-align: center;
+
+    }
+
+
+
+    .second-seciton {
+        grid-template-columns: repeat(1, 1fr);
+
+
+        flex-direction: column-reverse;
+        /* justify-content: center; */
+
+
+        width: auto;
+        /* margin-left: 0%; */
+        padding: auto;
+    }
+
+
+    .big-container {
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+        margin: auto;
+    }
+
+
+
+
+
+    .footer-c {
+        display: grid;
+        grid-template-columns: (1, 1fr);
+
+    }
+
+
+
+
+
+
+}
